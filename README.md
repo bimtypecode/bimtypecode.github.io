@@ -1,1 +1,1 @@
-# bimtypecode.github.io
+# BIMTypeCode.github.io

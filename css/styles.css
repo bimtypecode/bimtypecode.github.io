@@ -15,6 +15,7 @@ h2 {
   font-size: 16px;
 }
 
+
 /* Links */
 a {
   color: black;
@@ -28,6 +29,7 @@ a:hover {
   color: #2fa2de;
   text-decoration: none;
 }
+
 
 /* Lists */
 ul {
@@ -61,7 +63,8 @@ hr {
   margin-left: auto;
   margin-top: 20px;
   margin-bottom: 20px;
-  }
+}
+
 
 /* Blocks */
 header {
@@ -142,6 +145,7 @@ article a:hover {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 
 /* Company Logos */
 .container {

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="se">
 <head>
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0">
   <meta charset="utf-8">
   <meta name="description" content="Kodningsstruktur för byggkomponenter  'BIMTypeCode'">
   <meta name="keywords" content="BIM, Kodningsstruktur, Byggkomponenter , Typkod, BIMStockholm">
@@ -12,7 +13,9 @@
 </head>
   <body>
     <div class="grid-container">
-      <header class="header"><h1>BIMTypeCode</a></h1></header>
+      <header class="header">
+        <h1>BIMTypeCode</a></h1>
+      </header>
       <nav class="nav">
           <ul>
             <li><a href="index.html">Ladda ner BIMTypeCode</a></li>
@@ -33,8 +36,112 @@
         <a href="https://bimstockholm.se/"><img src="../images/BIMStockholm_loga.jpg" alt="BIMStockholm"></a>
       </aside>
       <article class="article">
-          <p>Ladda ner BIM Typkod her</p><br>
-          <p>Fil nr. 1</p>
+          <p>
+            <h2>Gällande material</h2>
+          </p>
+          <p>
+            BIMTypeCode består av fler olika dokument. Nedan följer en beskrivning av vilka dokument som gäller.
+          </p>
+          <p>
+            Under hösten 2022 kommer ytterligare handlingar att publiceras.
+            Det meddelas på <a href="http://www.bimstockholm.se/">BIM Stockholm</a>s hemsida och <a href="https://www.linkedin.com/company/bimstockholm/">LinkedIn-profil</a>.
+          </p>
+          <br>
+          <p><h3>Vägledning och värdelista</h3></p>
+          <p>
+            Kärnpublikationen innehåller instruktioner och en värdelista med typkoder.
+            Vägledningen beskriver uppbyggnaden av systemet och specificerar bl a att BIMTypeCode alltid består av 3 tecken.
+            Värdelistan listar kodningsstrukturen i Excel.
+          </p>
+          <p><b>-FATTAS-</b>
+            <a href="https://github.com/bimtypecode/bimtypecode/se/BIMTypeCode 2022SE - Vägledning.pdf">BIMTypeCode 2022 (Vägledning)</a>
+          <b>-FATTAS-</b></p>
+          <p>
+            <a href="https://github.com/bimtypecode/bimtypecode/se/BIMTypeCode 2022SE.xlsx">BIMTypeCode 2022 (Värdelista)</a>
+          </p>
+          <br>
+          <p>
+            <h3>BIMTypeNumber</h3>
+          </p>
+          <p>
+            För de tekniska disciplinerna har en värdelista med typnummer i Excel släppts.
+            Den visar ett exempel på hantering av löpnummer för installationsdisciplinerna, efter fastkodat företagsstruktur.
+          </p>
+          <p>
+            <a href="https://github.com/bimtypecode/bimtypecode/se/BIMTypeCode 2022SE - Bilaga TypeNumber.xlsx">BIMTypeCode 2022 - BIMTypeNumber (Värdelista)</a>
+          </p>
+          <br>
+          <p>
+            <h3>BIM Detaljering och Ansvar (BDA)</h3>
+          </p>
+          <p>
+            För integrering av BIMTypeCode i samordning av projektets modell utveckling i projekteringsskeden,
+            har ett detaljerings- och gränsdragningsschema publicerats.
+          </p>
+          <p>
+            <a href="https://github.com/bimtypecode/bimtypecode/se/BIMTypeCode 2022SE - BDA (Detaljering och Ansvar)">BIMTypeCode 2022 - BIM Detaljering och Ansvar (BDA)</a>
+          </p>
+          <br>
+          <p>
+            <h3>Tekniska supportfiler</h3>
+          </p>
+          <p>
+            För använding av BIMTypeCode har tre tekniska supportfiler släppts för Revit; en IFC parameterfil,
+            en Shared Parameter fil och Assembly Codes.
+          </p>
+          <p>
+            Shared Parameter filen innehåller kun BIMTypeCode parametre.
+            I förhållende till tidigare BIMTypeCode parameterfil, är endast parameternamn justerats.
+          </p>
+          <p>
+            <a href="https://github.com/bimtypecode/bimtypecode/se/BIMTypeCode - PropertySets - 2022SE.txt">Revit IFC parameterfil</a>
+          </p>
+        <p>
+          <a href="https://github.com/bimtypecode/bimtypecode/se/BIMTypeCode - Assembly Codes - 2022SE.txt">Revit Assembly Codes</a>
+        </p>
+        <p>
+          <a href="https://github.com/bimtypecode/bimtypecode/se/BIMTypeCode - Shared Parameters - 2022SE.txt">Revit Shared Parameter fil</a>
+        </p>
+        <p>
+          Eftersom parametrarna handlar om samma sak och bara har bytt namn, är det värderat bäst att återanvända GUID från tidigare.
+          Om man tidigare har använt BIMTypeCode Shared Parameters i Revit mallfiler måste de uppdateras för att få nytt namn.
+        </p>
+        <p>
+          Detta kan göras med plug-ins och Dynamo scripts. Vi har valt att släppa ett Dynamo script som:
+          1. Tar bort befintliga BIMTypeCode parametre (inklusive eventuella ifyllda värden).
+          2. Läggar till nya BIMTypeCode, som typattribut i Generic Model kategorin.
+        </p>
+        <p>
+          Härifrån, under Project Parameters, kan du välja till fler kategorin.
+          <br>
+          <b>NB</b>: Dynamo scripten används på egen risk.
+        </p>
+        <p>
+          <a href="https://github.com/bimtypecode/bimtypecode/se/BIMTypeCode - Shared Parameters Swap BIM7AA - 2022SE.dyn">Revit Dynamo Shared Parameters-bytfil</a>
+        </p>
+        <br>
+        <p>
+          <h3>Ändringslogg</h3>
+        </p>
+        <p>
+          BIMTypeCode 2022 ligger nära relaterad till tidigare.
+          Därför släpps en ändringslogg, för att jämföra skillnaden mellan de två releaserna.
+        </p>
+        <p>
+          <a href="https://github.com/bimtypecode/bimtypecode/se/BIMTypeCode - Ändringslogg BIMTypeCode - 2022SE.xlsx">BIMTypeCode 2022 ändringslogg</a>
+        </p>
+        <br>
+        <p>
+          <h2>Github</h2>
+        </p>
+        <p>
+          BIMTypeCode-dokumenterna finns också på <a href="https://github.com/bimtypecode/bimtypecode/">GitHub</a>
+        </p>
+        <br><br><br>
+        <p>
+          BIM Stockholm eller BIM7AA kan inte hållas ansvarig för
+          hur anvädaren av BIM&nbsp;Stockholm och BIM7AA:s publikationer hanterar användningen av dessa.
+        </p>
       </article>
   </body>
 </html>

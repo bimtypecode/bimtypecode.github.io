@@ -44,28 +44,28 @@
           Vejledningen beskriver opbygningen af systemet og præciserer bl.a.,
           at BIMTypeCode altid består af 3 karakterer.
           Værdilisten oplister kodningsstrukturen i Excel.</p>
-        <p><a href="https://github.com/bimtypecode/bimtypecode/blob/main/dk/BIMTypeCode%20-%20Vejledning%20-%202022DK.pdf" download="BIMTypeCode - Vejledning - 2022DK">BIMTypeCode 2022 (Vejledning)</a></p>
-        <p><a href="https://github.com/bimtypecode/bimtypecode/blob/main/dk/BIMTypeCode%20-%20V%C3%A6rdiliste%20-%202022DK.xlsx" download="BIMTypeCode - Værdiliste - 2022DK">BIMTypeCode 2022 (Værdiliste)</a></p>
+        <p><a href="https://github.com/bimtypecode/bimtypecode/raw/main/dk/BIMTypeCode%20-%20Vejledning%20-%202022DK.pdf" download="BIMTypeCode - Vejledning - 2022DK">BIMTypeCode 2022 (Vejledning)</a></p>
+        <p><a href="https://github.com/bimtypecode/bimtypecode/raw/main/dk/BIMTypeCode%20-%20V%C3%A6rdiliste%20-%202022DK.xlsx" download="BIMTypeCode - Værdiliste - 2022DK">BIMTypeCode 2022 (Værdiliste)</a></p>
         <br>
        <p><h3>BIMTypeNumber</h3></p>
         <p>For de tekniske fag er der frigivet en værdiliste med typenumre i Excel.
           Det viser eksempel på håndtering af løbenumre for installationsfagene,
           ved fastkodet firmastruktur.</p>
-        <p><a href="https://github.com/bimtypecode/bimtypecode/blob/main/dk/BIMTypeCode%20-%20V%C3%A6rdiliste%20BIMTypeNumber%20-%202022DK.xlsx" download="BIMTypeCode - Værdiliste BIMTypeNumber - 2022DK">BIMTypeCode 2022 - BIMTypeNumber (Værdiliste)</a></p>
+        <p><a href="https://github.com/bimtypecode/bimtypecode/raw/main/dk/BIMTypeCode%20-%20V%C3%A6rdiliste%20BIMTypeNumber%20-%202022DK.xlsx" download="BIMTypeCode - Værdiliste BIMTypeNumber - 2022DK">BIMTypeCode 2022 - BIMTypeNumber (Værdiliste)</a></p>
         <br>
         <p><h3>BIM Detaljering og Ansvar (BDA)</h3></p>
         <p>Til integration af BIMTypeCode i IKT-styringen af projektets modeludvikling i projektfaserne,
           er der frigivet et detaljerings- og ansvarsfordelingsskema.</p>
-        <p><a href="https://github.com/bimtypecode/bimtypecode/blob/main/dk/BIMTypeCode%20-%20BDA%20-%202022DK.xlsx" download="/BIMTypeCode - BDA - 2022DK.xlsx">BIMTypeCode 2022 - BIM Detaljering og Ansvar (BDA)</a></p>
+        <p><a href="https://github.com/bimtypecode/bimtypecode/raw/main/dk/BIMTypeCode%20-%20BDA%20-%202022DK.xlsx" download="/BIMTypeCode - BDA - 2022DK.xlsx">BIMTypeCode 2022 - BIM Detaljering og Ansvar (BDA)</a></p>
         <br>
         <p><h3>Tekniske støttefiler</h3></p>
         <p>Til arbejdet med brug af BIMTypeCode, er der frigivet tre tekniske støttefiler til Revit;
           en IFC parametersæt-fil, en Shared Parameters-fil og Assembly Codes.</p>
         <p>Shared Parameters filen indeholder kun BIMTypeCode parametre.
           I forhold til BIM7AA er der derfor kun tilrettet parameternavne og ikke medtaget parametre, som ikke vedrører strukturen.</p>
-        <p><a href="https://github.com/bimtypecode/bimtypecode/blob/main/shared/BIMTypeCode%20-%20PropertySets%20-%202022.txt" download="BIMTypeCode - PropertySets - 2022.txt">Revit IFC parametersæt-fil</a></p>
-        <p><a href="https://github.com/bimtypecode/bimtypecode/blob/main/dk/BIMTypeCode%20-%20Assembly%20Codes%20-%202022DK.txt" download="BIMTypeCode - Assembly Codes - 2022DK.txt">Revit Assembly Codes</a></p>
-        <p><a href="https://github.com/bimtypecode/bimtypecode/blob/main/shared/BIMTypeCode%20-%20Shared%20Parameters%20-%202022.txt" download="BIMTypeCode - Shared Parameters - 2022.txt">Revit Shared Parameters-fil</a></p>
+        <p><a href="https://github.com/bimtypecode/bimtypecode/raw/main/shared/BIMTypeCode%20-%20PropertySets%20-%202022.txt" download="BIMTypeCode - PropertySets - 2022.txt">Revit IFC parametersæt-fil</a></p>
+        <p><a href="https://github.com/bimtypecode/bimtypecode/raw/main/dk/BIMTypeCode%20-%20Assembly%20Codes%20-%202022DK.txt" download="BIMTypeCode - Assembly Codes - 2022DK.txt">Revit Assembly Codes</a></p>
+        <p><a href="https://github.com/bimtypecode/bimtypecode/raw/main/shared/BIMTypeCode%20-%20Shared%20Parameters%20-%202022.txt" download="BIMTypeCode - Shared Parameters - 2022.txt">Revit Shared Parameters-fil</a></p>
         <p>Da parametrene omhandler det samme og alene har skiftet navn, så har vi fundet det bedst at genbruge GUID fra BIM7AA.
           Hvis man tidligere har brugt BIM7AA Shared Parameters fra BIM7AA i Revit projekttemplates, så skal de opdateres for at få nyt navn.</p>
         <p>De kan man gøre med plugins og dynamo-grafer. Vi har valgt at frigive en dynamo-graf, som:
@@ -73,13 +73,13 @@
           2. Ligger BIMTypeCode parametrene, som typeegenskab i Generic Model.</p>
         <p>Herfra kan man under Project Parameters tilvælge flere kategorier som det ønskes.
           Bemærk: Grafen benyttes på eget ansvar.</p>
-          <p><a href="https://github.com/bimtypecode/bimtypecode/blob/main/shared/BIMTypeCode%20-%20Shared%20Parameters%20Swap%20-%202022.dyn" download="BIMTypeCode - Shared Parameters Swap - 2022.dyn">Revit Dynamo Shared Parameters-byttefil</a></p>
+          <p><a href="https://github.com/bimtypecode/bimtypecode/raw/main/shared/BIMTypeCode%20-%20Shared%20Parameters%20Swap%20-%202022.dyn" download="BIMTypeCode - Shared Parameters Swap - 2022.dyn">Revit Dynamo Shared Parameters-byttefil</a></p>
         <br>
         <p><h3>Ændringslogs</h3></p>
         <p>BIMTypeCode 2022 ligger sig tæt op af BIM7AA's tidligere BIM7AA Typekode v3.2.
           Derfor har vi frigivet to ændringslogs, som kan bruges til sammenligning forskellene i de to udgivelser.</p>
-        <p><a href="https://github.com/bimtypecode/bimtypecode/blob/main/dk/BIMTypeCode%20-%20%C3%86ndringslog%20BIMTypeCode%20-%202022DK.xlsx" download="BIMTypeCode - Ændringslog BIMTypeCode - 2022DK.xlsx">BIMTypeCode 2022 x BIM7AA v3.2 ændringslog BIMTypeCode</a></p>
-        <p><a href="https://github.com/bimtypecode/bimtypecode/blob/main/dk/BIMTypeCode%20-%20%C3%86ndringslog%20BIMTypeNumber%20-%202022DK.xlsx" download="BIMTypeCode - Ændringslog BIMTypeNumber - 2022DK.xlsx">BIMTypeCode 2022 x BIM7AA v3.2 ændringslog BIMTypeNumber</a></p>
+        <p><a href="https://github.com/bimtypecode/bimtypecode/raw/main/dk/BIMTypeCode%20-%20%C3%86ndringslog%20BIMTypeCode%20-%202022DK.xlsx" download="BIMTypeCode - Ændringslog BIMTypeCode - 2022DK.xlsx">BIMTypeCode 2022 x BIM7AA v3.2 ændringslog BIMTypeCode</a></p>
+        <p><a href="https://github.com/bimtypecode/bimtypecode/raw/main/dk/BIMTypeCode%20-%20%C3%86ndringslog%20BIMTypeNumber%20-%202022DK.xlsx" download="BIMTypeCode - Ændringslog BIMTypeNumber - 2022DK.xlsx">BIMTypeCode 2022 x BIM7AA v3.2 ændringslog BIMTypeNumber</a></p>
         <br>
         <p><h2>Github</h2></p>
         <p>BIMTypeCode-dokumenterne kan også findes på <a href="https://github.com/bimtypecode/bimtypecode/">GitHub</a> </p>

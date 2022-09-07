@@ -43,39 +43,41 @@
             BIMTypeCode består av fler olika dokument. Nedan följer en beskrivning av vilka dokument som gäller.
           </p>
           <p>
-            Under hösten 2022 kommer ytterligare handlingar att publiceras.
-            Det meddelas på <a href="http://www.bimstockholm.se/">BIM Stockholm</a>s hemsida och <a href="https://www.linkedin.com/company/bimstockholm/">LinkedIn-profil</a>.
+            Under hösten 2022 kommer ytterligare dokument att publiceras.
+            Detta meddelas på <a href="http://www.bimstockholm.se/">BIM Stockholm</a>:s hemsida och <a href="https://www.linkedin.com/company/bimstockholm/">LinkedIn-profil</a>.
           </p>
           <br>
-          <p><h3>Vägledning och värdelista</h3></p>
+          <p><h3>Vägledning och tabell</h3></p>
           <p>
-            Kärnpublikationen innehåller instruktioner och en värdelista med typkoder.
+            Kärnpublikationen innehåller instruktioner och en tabell med typkoder.
             Vägledningen beskriver uppbyggnaden av systemet och specificerar bl a att BIMTypeCode alltid består av 3 tecken.
-            Värdelistan listar kodningsstrukturen i Excel.
+            Tabellen listar kodningsstrukturen i Excel.
           </p>
-          <p><b>-FATTAS-</b>
-            <a href="https://github.com/bimtypecode/bimtypecode/se/BIMTypeCode 2022SE - Vägledning.pdf">BIMTypeCode 2022 (Vägledning)</a>
-          <b>-FATTAS-</b></p>
           <p>
-            <a href="https://github.com/bimtypecode/bimtypecode/se/BIMTypeCode 2022SE.xlsx">BIMTypeCode 2022 (Värdelista)</a>
+            <b>-FATTAS-</b>
+            <a href="https://github.com/bimtypecode/bimtypecode/se/BIMTypeCode 2022SE - Vägledning.pdf">BIMTypeCode 2022 (Vägledning)</a>
+            <b>-FATTAS-</b>
+          </p>
+          <p>
+            <a href="https://github.com/bimtypecode/bimtypecode/se/BIMTypeCode 2022SE.xlsx">BIMTypeCode 2022 (Tabell)</a>
           </p>
           <br>
           <p>
             <h3>BIMTypeNumber</h3>
           </p>
           <p>
-            För de tekniska disciplinerna har en värdelista med typnummer i Excel släppts.
-            Den visar ett exempel på hantering av löpnummer för installationsdisciplinerna, efter fastkodat företagsstruktur.
+            För de tekniska disciplinerna har en tabell med typnummer i Excel släppts.
+            Den visar ett exempel på hantering av löpnummer för installationsdisciplinerna, efter förbestämd kodad företagsstruktur.
           </p>
           <p>
-            <a href="https://github.com/bimtypecode/bimtypecode/se/BIMTypeCode 2022SE - Bilaga TypeNumber.xlsx">BIMTypeCode 2022 - BIMTypeNumber (Värdelista)</a>
+            <a href="https://github.com/bimtypecode/bimtypecode/se/BIMTypeCode 2022SE - Bilaga TypeNumber.xlsx">BIMTypeCode 2022 - BIMTypeNumber (Tabell)</a>
           </p>
           <br>
           <p>
             <h3>BIM Detaljering och Ansvar (BDA)</h3>
           </p>
           <p>
-            För integrering av BIMTypeCode i samordning av projektets modell utveckling i projekteringsskeden,
+            För integrering av BIMTypeCode i samordning av projektets modellutveckling i projekteringsskeden,
             har ett detaljerings- och gränsdragningsschema publicerats.
           </p>
           <p>
@@ -90,8 +92,8 @@
             en Shared Parameter fil och Assembly Codes.
           </p>
           <p>
-            Shared Parameter filen innehåller kun BIMTypeCode parametre.
-            I förhållende till tidigare BIMTypeCode parameterfil, är endast parameternamn justerats.
+            Shared Parameter filen innehåller endast BIMTypeCode parametrar.
+            I förhållende till tidigare BIMTypeCode parameterfil, är endast parameternamn som har justerats.
           </p>
           <p>
             <a href="https://github.com/bimtypecode/bimtypecode/se/BIMTypeCode - PropertySets - 2022SE.txt">Revit IFC parameterfil</a>
@@ -103,13 +105,13 @@
           <a href="https://github.com/bimtypecode/bimtypecode/se/BIMTypeCode - Shared Parameters - 2022SE.txt">Revit Shared Parameter fil</a>
         </p>
         <p>
-          Eftersom parametrarna handlar om samma sak och bara har bytt namn, är det värderat bäst att återanvända GUID från tidigare.
+          Eftersom parametrarna hanterar samma information som tidigare och bara har justerat namn, har vi funnit att det är bäst att återanvända GUID från tidigare.
           Om man tidigare har använt BIMTypeCode Shared Parameters i Revit mallfiler måste de uppdateras för att få nytt namn.
         </p>
         <p>
           Detta kan göras med plug-ins och Dynamo scripts. Vi har valt att släppa ett Dynamo script som:
-          1. Tar bort befintliga BIMTypeCode parametre (inklusive eventuella ifyllda värden).
-          2. Läggar till nya BIMTypeCode, som typattribut i Generic Model kategorin.
+          1. Tar bort befintliga BIMTypeCode parameter (inklusive eventuella ifyllda värden).
+          2. Lägger till nya BIMTypeCode, som typattribut i Generic Model kategorin.
         </p>
         <p>
           Härifrån, under Project Parameters, kan du välja till fler kategorin.
@@ -125,7 +127,7 @@
         </p>
         <p>
           BIMTypeCode 2022 ligger nära relaterad till tidigare.
-          Därför släpps en ändringslogg, för att jämföra skillnaden mellan de två releaserna.
+          Därför släpps en ändringslogg, för att enkelt se vad som skett mellan de två releaserna.
         </p>
         <p>
           <a href="https://github.com/bimtypecode/bimtypecode/se/BIMTypeCode - Ändringslogg BIMTypeCode - 2022SE.xlsx">BIMTypeCode 2022 ändringslogg</a>
@@ -135,7 +137,7 @@
           <h2>Github</h2>
         </p>
         <p>
-          BIMTypeCode-dokumenterna finns också på <a href="https://github.com/bimtypecode/bimtypecode/">GitHub</a>
+          BIMTypeCode-dokumenten finns också på <a href="https://github.com/bimtypecode/bimtypecode/">GitHub</a>
         </p>
         <br><br><br>
         <p>
